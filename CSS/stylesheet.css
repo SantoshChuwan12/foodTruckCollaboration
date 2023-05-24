@@ -1,0 +1,242 @@
+/* COLORS
+#bf8360 orange
+#593738 brown
+#8c3f3f redder orange
+#84a693 teal blue
+#afb698 barf
+#bf7c7c light red
+#f2faf6 white
+ */
+
+body {
+    /* background-color: rgb(230, 208, 176); */
+    background-color: #f2faf6;
+}
+
+img {}
+
+/* side nav got it from w3schools */
+#mySidenav a {
+    position: fixed;
+    /* Position them relative to the browser window */
+    left: -110px;
+    /* Position them outside of the screen */
+    transition: 0.3s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 140px;
+    /* Set a specific width */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 20px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners on the top right and bottom right side */
+    text-align: left;
+}
+/* full screen */
+@media only screen and (max-width: 100rem) {
+
+    .eventImage,
+    .CalenderImage,
+    .mainMenu{
+        padding: 2rem 15rem;
+
+    }
+
+}
+/* smaller screen */
+@media only screen and (max-width: 1000px) {
+    #mySidenav a {
+        width: 140px;
+        left: -110px;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    /* event */
+    .eventImage,
+    .CalenderImage,
+    .mainMenu {
+        padding: 0% .1rem;
+    }
+
+    .eventImage img .CalenderImage img,
+    .NewsletterImage img {
+        height: 20rem;
+    }
+
+    .mainMenu img {
+        height: 15rem;
+    }
+}
+
+/* sidenav */
+#mySidenav a:hover {
+    left: 0;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#about {
+    top: 20px;
+    background-color: #593738;
+}
+
+#blog {
+    top: 80px;
+    background-color: #afb698;
+}
+
+#projects {
+    top: 140px;
+    background-color: #8c3f3f;
+}
+
+#contact {
+    top: 200px;
+    background-color: #bf8360;
+}
+#truck {
+    top: 260px;
+    background-color: #afb698 ;
+    
+}
+#newsletter {
+    top:  320px;
+    background-color:  #593738;
+    
+}
+
+
+.container {
+    text-align: center;
+}
+
+H1 {
+    padding-top: 2rem;
+    font-weight: 300;
+    font-size: 8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5rem;
+}
+
+/* countdown */
+* {
+
+    font-family: "Ruluko";
+
+}
+
+main {
+    background: #447878 !important;
+    text-align: center;
+    padding: 150px 20px !important;
+}
+
+h3 {
+    margin: 20px;
+    color: #181616;
+}
+
+#countDiv {
+    color: white;
+    display: inline-block;
+    font-size: 50px;
+}
+
+#countDiv>div {
+    padding: 10px;
+    background-color: #38556A;
+    border-radius: 30% 3%;
+    display: inline-block;
+}
+
+#countDiv div>span {
+    padding: 15px;
+    background-color: #4C6983;
+    border-radius: 30% 3%;
+    display: inline-block;
+    transition: all 1s;
+}
+
+#countDiv div>span:hover {
+    cursor:default;
+    transform: rotate(0.5turn)
+}
+
+.smallText {
+    font-weight: 900;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.scroll {
+    padding-bottom: 5rem;
+    font-size: 1rem;
+}
+
+h4 {
+    padding-bottom: 3rem;
+    font-weight: 500;
+    font-size: 3rem
+}
+
+/* CALENDER PLACER */
+.CalenderImage {
+    height: 20rem;
+}
+
+.mainMenu {
+    height: 20rem;
+}
+
+.NewsletterImage {
+    height: 20rem;
+}
+
+/* event */
+.eventImage,
+.CalenderImage,
+.mainMenu {
+    margin-top: 7rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.eventImage img,
+.CalenderImage img,
+.mainMenu img
+ {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+/* newsletter */
+.centerContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.NewsletterImage {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 10rem;
+    display: inline-block;
+    margin-bottom: 3rem ;
+    color:#f2faf6;
+    border-radius: .2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
